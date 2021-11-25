@@ -14,22 +14,28 @@ const sumZero = (arr) => {
     return addZero;
 }
 
-// The runtime of this function would be O(n^2) because there is a nested for loop.
+// The time complexity of this function is O(n^2) because there is a nested for loop.
+// The space complexity of this function is O(n).
+
 
 
 // Unique Characters //
 const hasUniqueChars = (string) => [... new Set(string)].join("") === string;
 
-// The runtime of this function would be O(n) since the Set class iterates through the whole string.
+// The time complexity of this function is O(n) since the Set class iterates through the whole string.
+// The space complexity of this function is O(n).
+
 
 
 // Pangram Sentence //
 const isPangram = (string) => new Set(string.toLowerCase().match(/[a-z]/g)).size === 26;    
 
-// The runtime of this function is O(n) since the Set class iterates through the whole string.
+// The time complexity of this function is O(n) since the Set class iterates through the whole string.
+// The space complexity of this function is O(n).
+
+
 
 // Longest Word //
-
 let array = ["hi", "hello", "hullaballuuoooo", "wassup", "greetings"];
 let res = [];
 
@@ -40,7 +46,8 @@ function find_longest_word(arr) {
     return Math.max(... res);
 }
 
-// The runtime of this function is O(n) since there is one for loop that it dictated upon a variable that can change according the array.
+// The time complexity of this function is O(n) since there is one for loop that it dictated upon a variable that can change according the array.
+// The space complexity of this function is O(n).
 
 
 
